@@ -1,11 +1,12 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
+title: 'Reproducible Research: Peer Assessment 2'
+output:
+  pdf_document: default
   html_document:
-    keep_md: true
+    keep_md: yes
 ---
 
-# What weather events influence to economic and public health 
+# What weather events influence to economics and public health 
 The aim of this report is to explor U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database and answer to the following questions
 1. Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health?
 2. Across the United States, which types of events have the greatest economic consequences?
@@ -17,11 +18,7 @@ which is explored in this report is available by the link [Storm Data](https://d
 This database tracks characteristics of major storms and weather events in
 the United States, including when and where they occur, as well as estimates of
 any fatalities, injuries, and property damage.
-```{r load_data, cache=TRUE}
-download.file(url="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2",
-    destfile="stormdata.csv.bz2",
-    method="curl")
-```
+
 
 ### Reading the data
 Storm database is a CSV file compressed by bzip2 algorithm.
